@@ -1,0 +1,12 @@
+from sklearn import svm, grid_search, datasets
+iris = datasets.load_iris()
+parameters = {'kernel':('linear', 'rbf'), 'C':[1, 10]}
+svr = svm.SVC()
+clf = grid_search.GridSearchCV(svr, parameters)
+#print clf
+clf.fit(iris.data[:100], iris.target[100:])
+print clf.grid_scores_
+print "---------------"
+print clf.best_estimator_
+print clf.best_params_
+print clf.score(iris.data[:100], iris.target[100:])

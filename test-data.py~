@@ -1,0 +1,11 @@
+from sklearn.datasets.mldata import fetch_mldata
+import tempfile
+test_data_home = tempfile.mkdtemp()
+
+#data = fetch_mldata('uci-20070111 breastTumor', data_home=test_data_home)
+
+dat = fetch_mldata('housing_scale',transpose_data=True, data_home=test_data_home)
+print (dat.data.shape)
+print (dat.target.shape)
+print (dat.data[1])
+print dat.target_names

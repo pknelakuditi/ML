@@ -1,0 +1,146 @@
+None
+SVC for hand written digits
+# Tuning hyper-parameters for precision
+
+Best parameters set found on development set:
+
+SVC(C=10, cache_size=200, class_weight=None, coef0=0.0, degree=3, gamma=0.001,
+  kernel=rbf, max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)
+
+Grid scores on development set:
+
+0.962 (+/-0.005) for {'kernel': 'rbf', 'C': 0.1, 'gamma': 0.001}
+0.889 (+/-0.005) for {'kernel': 'rbf', 'C': 0.1, 'gamma': 0.0001}
+0.990 (+/-0.003) for {'kernel': 'rbf', 'C': 1, 'gamma': 0.001}
+0.971 (+/-0.005) for {'kernel': 'rbf', 'C': 1, 'gamma': 0.0001}
+0.991 (+/-0.004) for {'kernel': 'rbf', 'C': 10, 'gamma': 0.001}
+0.985 (+/-0.003) for {'kernel': 'rbf', 'C': 10, 'gamma': 0.0001}
+0.991 (+/-0.004) for {'kernel': 'rbf', 'C': 100, 'gamma': 0.001}
+0.986 (+/-0.002) for {'kernel': 'rbf', 'C': 100, 'gamma': 0.0001}
+0.991 (+/-0.004) for {'kernel': 'rbf', 'C': 1000, 'gamma': 0.001}
+0.986 (+/-0.002) for {'kernel': 'rbf', 'C': 1000, 'gamma': 0.0001}
+0.977 (+/-0.003) for {'kernel': 'linear', 'C': 1}
+0.977 (+/-0.003) for {'kernel': 'linear', 'C': 10}
+0.977 (+/-0.003) for {'kernel': 'linear', 'C': 100}
+0.977 (+/-0.003) for {'kernel': 'linear', 'C': 1000}
+0.984 (+/-0.003) for {'kernel': 'poly', 'C': 1, 'degree': 2}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 1, 'degree': 3}
+0.988 (+/-0.003) for {'kernel': 'poly', 'C': 1, 'degree': 4}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 1, 'degree': 5}
+0.982 (+/-0.003) for {'kernel': 'poly', 'C': 1, 'degree': 6}
+0.984 (+/-0.003) for {'kernel': 'poly', 'C': 10, 'degree': 2}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 10, 'degree': 3}
+0.988 (+/-0.003) for {'kernel': 'poly', 'C': 10, 'degree': 4}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 10, 'degree': 5}
+0.982 (+/-0.003) for {'kernel': 'poly', 'C': 10, 'degree': 6}
+0.984 (+/-0.003) for {'kernel': 'poly', 'C': 100, 'degree': 2}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 100, 'degree': 3}
+0.988 (+/-0.003) for {'kernel': 'poly', 'C': 100, 'degree': 4}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 100, 'degree': 5}
+0.982 (+/-0.003) for {'kernel': 'poly', 'C': 100, 'degree': 6}
+0.984 (+/-0.003) for {'kernel': 'poly', 'C': 1000, 'degree': 2}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 1000, 'degree': 3}
+0.988 (+/-0.003) for {'kernel': 'poly', 'C': 1000, 'degree': 4}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 1000, 'degree': 5}
+0.982 (+/-0.003) for {'kernel': 'poly', 'C': 1000, 'degree': 6}
+
+Detailed classification report:
+
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00        11
+          1       0.95      1.00      0.98        20
+          2       1.00      1.00      1.00        16
+          3       1.00      1.00      1.00        10
+          4       1.00      1.00      1.00        10
+          5       0.95      1.00      0.98        21
+          6       1.00      1.00      1.00        25
+          7       1.00      1.00      1.00        20
+          8       1.00      0.96      0.98        23
+          9       1.00      0.96      0.98        24
+
+avg / total       0.99      0.99      0.99       180
+
+
+1.0
+score
+{'kernel': 'rbf', 'C': 10, 'gamma': 0.001}
+best_params
+0.988888888889
+accuracy_score
+# Tuning hyper-parameters for recall
+
+Best parameters set found on development set:
+
+SVC(C=10, cache_size=200, class_weight=None, coef0=0.0, degree=3, gamma=0.001,
+  kernel=rbf, max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)
+
+Grid scores on development set:
+
+0.959 (+/-0.006) for {'kernel': 'rbf', 'C': 0.1, 'gamma': 0.001}
+0.879 (+/-0.005) for {'kernel': 'rbf', 'C': 0.1, 'gamma': 0.0001}
+0.989 (+/-0.003) for {'kernel': 'rbf', 'C': 1, 'gamma': 0.001}
+0.970 (+/-0.006) for {'kernel': 'rbf', 'C': 1, 'gamma': 0.0001}
+0.991 (+/-0.004) for {'kernel': 'rbf', 'C': 10, 'gamma': 0.001}
+0.985 (+/-0.003) for {'kernel': 'rbf', 'C': 10, 'gamma': 0.0001}
+0.991 (+/-0.004) for {'kernel': 'rbf', 'C': 100, 'gamma': 0.001}
+0.985 (+/-0.002) for {'kernel': 'rbf', 'C': 100, 'gamma': 0.0001}
+0.991 (+/-0.004) for {'kernel': 'rbf', 'C': 1000, 'gamma': 0.001}
+0.985 (+/-0.002) for {'kernel': 'rbf', 'C': 1000, 'gamma': 0.0001}
+0.976 (+/-0.003) for {'kernel': 'linear', 'C': 1}
+0.976 (+/-0.003) for {'kernel': 'linear', 'C': 10}
+0.976 (+/-0.003) for {'kernel': 'linear', 'C': 100}
+0.976 (+/-0.003) for {'kernel': 'linear', 'C': 1000}
+0.983 (+/-0.003) for {'kernel': 'poly', 'C': 1, 'degree': 2}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 1, 'degree': 3}
+0.988 (+/-0.003) for {'kernel': 'poly', 'C': 1, 'degree': 4}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 1, 'degree': 5}
+0.981 (+/-0.003) for {'kernel': 'poly', 'C': 1, 'degree': 6}
+0.983 (+/-0.003) for {'kernel': 'poly', 'C': 10, 'degree': 2}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 10, 'degree': 3}
+0.988 (+/-0.003) for {'kernel': 'poly', 'C': 10, 'degree': 4}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 10, 'degree': 5}
+0.981 (+/-0.003) for {'kernel': 'poly', 'C': 10, 'degree': 6}
+0.983 (+/-0.003) for {'kernel': 'poly', 'C': 100, 'degree': 2}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 100, 'degree': 3}
+0.988 (+/-0.003) for {'kernel': 'poly', 'C': 100, 'degree': 4}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 100, 'degree': 5}
+0.981 (+/-0.003) for {'kernel': 'poly', 'C': 100, 'degree': 6}
+0.983 (+/-0.003) for {'kernel': 'poly', 'C': 1000, 'degree': 2}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 1000, 'degree': 3}
+0.988 (+/-0.003) for {'kernel': 'poly', 'C': 1000, 'degree': 4}
+0.986 (+/-0.003) for {'kernel': 'poly', 'C': 1000, 'degree': 5}
+0.981 (+/-0.003) for {'kernel': 'poly', 'C': 1000, 'degree': 6}
+
+Detailed classification report:
+
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00        11
+          1       0.95      1.00      0.98        20
+          2       1.00      1.00      1.00        16
+          3       1.00      1.00      1.00        10
+          4       1.00      1.00      1.00        10
+          5       0.95      1.00      0.98        21
+          6       1.00      1.00      1.00        25
+          7       1.00      1.00      1.00        20
+          8       1.00      0.96      0.98        23
+          9       1.00      0.96      0.98        24
+
+avg / total       0.99      0.99      0.99       180
+
+
+1.0
+score
+{'kernel': 'rbf', 'C': 10, 'gamma': 0.001}
+best_params
+0.988888888889
+accuracy_score

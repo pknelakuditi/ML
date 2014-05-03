@@ -1,0 +1,73 @@
+All used parameters : [{'n_neighbors': [2, 4, 5, 6, 7, 8, 9, 10], 'weights': ['uniform', 'distance']}]
+K neighbour classfier using BALL TREE for Wine data
+
+
+training percentage :: 90
+
+KNeighborsClassifier(algorithm=ball_tree, leaf_size=30, metric=minkowski,
+           n_neighbors=6, p=2, weights=distance)
+             precision    recall  f1-score   support
+
+          1       1.00      1.00      1.00         6
+          2       0.75      0.75      0.75         8
+          3       0.50      0.50      0.50         4
+
+avg / total       0.78      0.78      0.78        18
+
+1.0
+score
+
+{'n_neighbors': 6, 'weights': 'distance'}
+best_params
+
+0.777777777778
+accuracy_score
+
+K neighbour classfier using BALL TREE for Wine data
+
+
+training percentage :: 70
+
+KNeighborsClassifier(algorithm=ball_tree, leaf_size=30, metric=minkowski,
+           n_neighbors=6, p=2, weights=distance)
+             precision    recall  f1-score   support
+
+          1       0.90      0.90      0.90        21
+          2       0.89      0.84      0.86        19
+          3       0.73      0.79      0.76        14
+
+avg / total       0.85      0.85      0.85        54
+
+1.0
+score
+
+{'n_neighbors': 6, 'weights': 'distance'}
+best_params
+
+0.851851851852
+accuracy_score
+
+K neighbour classfier using BALL TREE for Wine data
+
+
+training percentage :: 50
+
+KNeighborsClassifier(algorithm=ball_tree, leaf_size=30, metric=minkowski,
+           n_neighbors=8, p=2, weights=uniform)
+             precision    recall  f1-score   support
+
+          1       0.79      0.93      0.86        29
+          2       0.86      0.69      0.76        35
+          3       0.67      0.72      0.69        25
+
+avg / total       0.78      0.78      0.77        89
+
+0.808988764045
+score
+
+{'n_neighbors': 8, 'weights': 'uniform'}
+best_params
+
+0.775280898876
+accuracy_score
+
